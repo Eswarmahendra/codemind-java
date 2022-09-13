@@ -1,5 +1,5 @@
 import java.util.Scanner;
-class java
+class df
 {
     public static void main(String args[])
     {
@@ -8,11 +8,10 @@ class java
         a=sc.nextInt();
         for( i=1;i<=a;i++)
         {
-            for(j=a;j>=1;j--)
+            for(j=1;j<=a;j++)
             {
-                System.out.print(j+" ");
+                System.out.print((char)(64+i)+" ");
             }
-            
             System.out.println();
         }
     }
