@@ -3,15 +3,16 @@ class java
 {
     public static void main(String args[])
     {
-        int a;
+        int i,j,a,k=1;
         Scanner sc=new Scanner(System.in);
         a=sc.nextInt();
-        for(int i=a;i>=1;i--)
+        for( i=1;i<=a;i++)
         {
-            for(int j=1;j<=i;j++)
+            for(j=a;j>=1;j--)
             {
-                System.out.print(j);
+                System.out.print(j+" ");
             }
+            
             System.out.println();
         }
     }
