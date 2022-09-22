@@ -1,24 +1,28 @@
 import java.util.Scanner;
-class evfood
+class array
 {
-public static void main(String args[])
-{
-int a,c,count=0;
-Scanner sc=new Scanner(System.in);
-a=sc.nextInt();
-int b[]=new int[a];
-for(int i=0;i<a;i++)
-{
-b[i]=sc.nextInt();
-}
- c=sc.nextInt();
-for(int i=0;i<a;i++)
-{
-if(b[i]==c)
-{
-count++;
-}
-}
-System.out.println(count);
-}
+    public static void main(String args[])
+    {
+        int count=0,n;
+        Scanner sc=new Scanner(System.in);
+        n=sc.nextInt();
+        int x[]=new int[n];
+        for(int i=0;i<n;i++)
+        {
+            x[i]=sc.nextInt();
+        }
+        
+        int k;
+        k=sc.nextInt();
+        for(int i=0;i<n;i++)
+        {
+            if(x[i]==k)
+            count++;
+            
+        }
+        if(count==0)
+        System.out.println("0");
+        else
+        System.out.println(count);
+    }
 }
