@@ -1,23 +1,23 @@
 import java.util.Scanner;
-class java
+class array
 {
     public static void main(String args[])
     {
-        int n,i,b=0;
+        int k=0,n;
         Scanner sc=new Scanner(System.in);
         n=sc.nextInt();
-        int a[]=new int[n];
-        for(i=0;i<n;i++)
+        int x[]=new int[n];
+        for(int i=0;i<n;i++)
         {
-            a[i]=sc.nextInt();
+            x[i]=sc.nextInt();
         }
-        for(i=0;i<n;i++)
+        for(int i=0;i<n;i++)
         {
-            if(a[i]%2!=0)
+            if(x[i]%2!=0)
             {
-                b=i;
+                k=i;
             }
         }
-        System.out.println(b);
+        System.out.println(k);
     }
 }
