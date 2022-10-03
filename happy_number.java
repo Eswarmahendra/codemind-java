@@ -4,7 +4,6 @@ class HappyNumber
 	public static int checkHappyNumber (int number)
 	{
 		int rem = 0, sum = 0;
-		// calculate the sum of squares of each digits
 		while(number > 0)
 		{
 			rem = number %10;
@@ -15,7 +14,6 @@ class HappyNumber
 	}
 	public static void main(String[] args)
 	{
-		//Take number from KeyBoard
 		Scanner sc = new Scanner (System.in);
 		int number = sc.nextInt( );
 		int result = number;
