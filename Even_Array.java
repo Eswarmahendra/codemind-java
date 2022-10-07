@@ -1,27 +1,22 @@
 import java.util.Scanner;
-class evfood
+class Even
 {
-public static void main(String args[])
-{
-int a,sum=0,c=0,co=0;
-float avg=0;
-Scanner sc=new Scanner(System.in);
-a=sc.nextInt();
-int b[]=new int[a];
-for(int i=0;i<a;i++)
-{
-b[i]=sc.nextInt();
-}
-for(int i=0;i<a;i++)
-{
-if(b[i]%2==0)
-{
-co++;
-}
-}
-if(co==a)
-System.out.print("True");
-else
-System.out.println("False");
-}
+    public static void main(String args[])
+    {
+        int n,count=0;
+        Scanner sc=new Scanner(System.in);
+        n=sc.nextInt();
+        int x[]=new int[n];
+        for(int i=0;i<n;i++)
+        x[i]=sc.nextInt();
+        for(int j=0;j<n;j++)
+        {
+            if(x[j]%2==0)
+            count++;
+        }
+        if(count==n)
+        System.out.println("True");
+        else
+        System.out.println("False");
+    }
 }
