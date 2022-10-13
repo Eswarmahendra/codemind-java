@@ -5,43 +5,22 @@ class Main
     {
         Scanner sc = new Scanner(System.in);
         int N = sc.nextInt();
+        int p=1;
+        int q=N;
         for(int i=1; i<=N; i++)
         {
-            if(i > 1 && i < N)
+            for(int j=1; j<=N; j++)
             {
-                int p = i-2;
-                int q = N-i;
-                System.out.print("*");
-                for(int j=1; j<=p;j++)
-                    System.out.print(" ");
-                System.out.print("*");
-                for(int k=1; k<=q; k++)
-                    System.out.print(" ");
+                if(j == p || j == q)
+                    System.out.print("x");
+                else
+                    System.out.print("0");
             }
-            else if(i == N)
-            {
-                int j=i;
-                while(j > 0)
-                {
-                    System.out.print("*");
-                    j--;
-                }
-            }
-            else if(i == 1)
-            {
-                int q = N-i;
-                System.out.print("*");
-                while(q > 0)
-                {
-                    System.out.print(" ");
-                    q--;
-                }
-            }
-            if(i != N)
-            {
+            p++;
+            q--;
+            //if(i != N)
                 System.out.print("
 ");
-            }
         }
         sc.close();
     }
