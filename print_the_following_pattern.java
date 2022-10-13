@@ -4,20 +4,16 @@ class Main
     public static void main(String args[])
     {
         Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        int p=1;
-        for(int i=1; i<=n; i++)
+        int N = sc.nextInt();
+        for(int i=1; i<=N; i++)
         {
-            for(int j=1; j<=n; j++)
+                for(int k=1; k<=N-i; k++)
+                    System.out.print(" ");
+            for(int j=1; j<2*i; j++)
             {
-                if(j == i)
-                    System.out.print("0");
-                else
-                    System.out.print("x");
+                System.out.print(i);
             }
-            p++;
-            //if(i != N)
-                System.out.print("
+            System.out.print("
 ");
         }
         sc.close();
