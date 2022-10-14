@@ -1,25 +1,25 @@
 import java.util.Scanner;
-class Main
+class Min
 {
     public static void main(String args[])
     {
-        int sum=0;
-        Scanner sc = new Scanner(System.in);
-        int N = sc.nextInt();
-        int arr[] = new int[N];
-        for(int i=0; i<N; i++)
-            arr[i] = sc.nextInt();
-        int a = sc.nextInt();
-        int b = sc.nextInt();
-        int max = 0;
-        for(int i=0; i<N; i++)
+        int n,found=0;
+        Scanner sc=new Scanner(System.in);
+        n=sc.nextInt();
+        int x[]=new int[n];
+        for(int i=0;i<n;i++)
+        x[i]=sc.nextInt();
+        int a,b,sum=0;
+        a=sc.nextInt();
+        b=sc.nextInt();
+        for(int i=0;i<n;i++)
         {
-            if(arr[i] >= a && arr[i] <= b)
+            if(x[i]>=a && x[i]<=b)
             {
-                sum=sum+arr[i];
+               sum=sum+x[i];
             }
         }
+       
         System.out.println(sum);
-    sc.close();
     }
 }
