@@ -1,33 +1,31 @@
-import java.util.*;
-class Main
+import java.util.Scanner;
+class Min
 {
     public static void main(String args[])
     {
-        Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        ArrayList<Integer> list = new ArrayList<Integer>();
-        for(int i=0; i<n; i++)
-            list.add(sc.nextInt());
-        int min0 = n;
-        int c = 0;
-        int p = sc.nextInt();
-        int q = sc.nextInt();
-        for(int i : list)
+        int n,found=0;
+        Scanner sc=new Scanner(System.in);
+        n=sc.nextInt();
+        int x[]=new int[n];
+        for(int i=0;i<n;i++)
+        x[i]=sc.nextInt();
+        int a,b,min=9;
+        a=sc.nextInt();
+        b=sc.nextInt();
+        for(int i=0;i<n;i++)
         {
-            if(i >= p && i<= q)
+            if(x[i]>=a && x[i]<=b)
             {
-                if(i < min0)
+                if(x[i]<min)
                 {
-                    min0 = i;
-                    c++;
+                    min=x[i];
+                    found=1;
                 }
             }
         }
-        if(c != 0)
-            System.out.print(min0);
+        if(found==0)
+        System.out.println("-1");
         else
-            System.out.print(-1);
-        sc.close();
-        
+        System.out.println(min);
     }
 }
